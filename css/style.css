@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* BODY */
+
+body {
+  background-color: rgb(219, 206, 187);
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  background-color: rgb(211, 146, 60);
+  font-size: 52px;
+  padding: 50px;
+  text-align: center;
+  color: rgb(224, 224, 224);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 50px auto;
+}
+.side-menu {
+  min-width: 350px;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  margin-top: -250px;
+}
+.side-menu > li {
+  flex-direction: column;
+  background-color: rgb(212, 145, 56);
+  padding: 25px;
+  border: 1px solid rgb(179, 126, 57);
+}
+.side-menu > li:active {
+  background-color: rgb(175, 122, 53);
+}
+.side-link {
+  font-size: 28px;
+  color: rgb(224, 224, 224);
+  text-decoration: none;
+}
+.card {
+  flex: 1 1 45%;
+  height: 550px;
+  position: relative;
+  border: 1px solid rgb(138, 102, 55);
+  border-radius: 15px;
+}
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.card > p {
+  background-color: rgba(113, 41, 172, 0.486);
+  height: 300px;
+  font-size: 28px;
+  color: rgb(240, 240, 240);
+  padding: 40px;
+  line-height: 1.3;
+  position: absolute;
+  top: 50%;
+  margin-top: -150px;
+  opacity: 0;
+}
+.card > p:hover {
+  opacity: 1;
+}
+footer {
+  background-color: rgb(211, 146, 60);
+  font-size: 26px;
+  padding: 50px;
+  text-align: center;
+  color: rgb(235, 235, 235);
+  height: 150px;
+}
