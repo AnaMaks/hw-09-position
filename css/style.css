@@ -139,15 +139,10 @@ header {
 .side-menu {
   min-width: 350px;
   position: fixed;
+  height: 500px;
   top: 50%;
   left: 0;
   margin-top: -250px;
-}
-.side-menu > li {
-  flex-direction: column;
-  background-color: rgb(212, 145, 56);
-  padding: 25px;
-  border: 1px solid rgb(179, 126, 57);
 }
 .side-menu > li:active {
   background-color: rgb(175, 122, 53);
@@ -156,6 +151,10 @@ header {
   font-size: 28px;
   color: rgb(224, 224, 224);
   text-decoration: none;
+  display: block;
+  background-color: rgb(212, 145, 56);
+  padding: 25px;
+  border: 1px solid rgb(179, 126, 57);
 }
 .card {
   flex: 1 1 45%;
@@ -179,10 +178,12 @@ header {
   line-height: 1.3;
   position: absolute;
   top: 50%;
+  left: 0;
+  right: 0;
   margin-top: -150px;
   opacity: 0;
 }
-.card > p:hover {
+.card:hover p {
   opacity: 1;
 }
 footer {
